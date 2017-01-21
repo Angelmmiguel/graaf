@@ -1,0 +1,24 @@
+{
+  "name": "graaf",
+  "version": "1.0.0",
+  "description": "The easiest way to add a grid to your project and check the spacing and vertical rhythm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "design",
+    "vertical",
+    "rhythm",
+    "typography"
+  ],
+  "author": "Angelmmiguel <angel@laux.es>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "node-png": "^0.4.3"
+  }
+}

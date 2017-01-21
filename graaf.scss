@@ -1,0 +1,48 @@
+/**
+ * Generate a fixed grid.
+ */
+@mixin generateFixedGrid($width, $columns, $gutter) {
+  // Base image
+  $base_image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUCB1j6OvrMwEABTcB30rDe3EAAAAASUVORK5CYII=');
+
+  // The width of every column
+  $column_width: ($width - ($gutter * ($columns - 1))) / $columns;
+  // Generate required values. We are going to use the same image several times
+  $images: $base_image;
+  $positions: 0 0;
+  $sizes: $column_width 1px;
+
+  @for $col from 1 through ($columns - 1)  {
+    // Position of the current column
+    $position: ($col * $column_width) + ($col * $gutter);
+    // Repeat image and positions
+    $images: $images, $base_image;
+    $positions: $positions, $position 0;
+  }
+
+  // BEGIN CSS CODE
+
+  // Disable the grid applying .no-grid class
+  body:not(.no-grid) {
+    margin: 0;
+
+    &:after {
+      content: '';
+      position: fixed;
+      // Will be enough?
+      z-index: 99999999999;
+      // Center it
+      width: $width;
+      left: 50%;
+      margin-left: -($width / 2);
+      // 100% of the user view height
+      top: 0;
+      height: 100vh;
+      background-image: $images;
+      background-position: $positions;
+      background-size: $column_width 1px;
+      background-repeat: repeat-y;
+    }
+  }
+  // END CSS CODE
+}
