@@ -1,7 +1,0 @@
-@import '../graaf';
-
-$width: 970px;
-$columns: 4;
-$gutter: 30px;
-
-@include generateFixedGrid($width, $columns, $gutter);
