@@ -18,7 +18,10 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
     "node-png": "^0.4.3"
   }
 }

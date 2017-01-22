@@ -1,0 +1,176 @@
+// Basic values
+$font-size: 16px;
+$font-body: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-header: 'Merriweather', Georgia, serif;
+$scale: 1.5;
+// Grid
+$gutter: 16px;
+$width: 793px;
+// Height unity
+$hu: ($font-size * $scale) / 2;
+// Footer
+$footer-separator: 10%;
+
+// Colors
+$base: black;
+$bg: white;
+
+// Reset
+body {
+  font-size: $font-size;
+  font-family: $font-body;
+  line-height: $scale;
+  margin: 0
+}
+
+a {
+  color: $base;
+  font-style: italic;
+}
+
+.container {
+  max-width: $width;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: $font-header;
+}
+
+h1 {
+  font-size: $font-size * $scale * $scale;
+}
+
+h2 {
+  font-size: $font-size * $scale;
+  text-align: center;
+}
+
+// Main content
+main {
+  margin: 5 * $hu 0 4 * $hu;
+
+  header {
+    text-align: center;
+
+    .logo {
+      text-align: center;
+      margin-bottom: 3 * $hu;
+
+      img {
+        width: 3em;
+        height: 3em;
+      }
+    }
+
+    .slogan {
+      font-family: $font-header;
+      font-size: $font-size * $scale * $scale;
+      text-align: center;
+      padding: 0 $gutter;
+      max-width: 631px;
+      margin: 0 auto;
+    }
+
+    .sub-slogan {
+      text-align: center;
+      margin: 2 * $hu 0 3 * $hu;
+      font-size: $font-size * $scale;
+      font-style: italic;
+      color: lighten($base, 30%)
+    }
+  }
+
+  .try {
+    text-align: center;
+    background-color: darken($bg, 3%);
+    padding: 2 * $hu;
+    margin-bottom: 3 * $hu;
+
+    button {
+      background-color: $base;
+      border: none;
+      font-size: 1em;
+      padding: .5em 1em;
+      color: $bg;
+      cursor: pointer;
+    }
+
+    .description,
+    .code {
+      font-size: $font-size * .75;
+    }
+
+    .description {
+      margin-bottom: 0;
+    }
+
+    .code {
+      margin: $hu / 2 0 0;
+    }
+  }
+
+  .grids {
+    width: 100%;
+
+    th,
+    td {
+      padding: .5em 0;
+    }
+
+    th {
+      border-bottom: 1px solid $base;
+
+      img {
+        position: relative;
+        top: 2px;
+        margin-right: .5em;
+      }
+    }
+
+    .row-center {
+      text-align: center;
+    }
+
+    tbody {
+      tr {
+        td {
+          border-bottom: 1px solid darken($bg, 5%);
+        }
+
+        td:first-child {
+          font-family: $font-header;
+          font-size: $font-size * 1.25;
+        }
+
+        td:last-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding-top: 2 * $hu;
+  margin-bottom: 3 * $hu;
+
+  &:after {
+    content: '';
+    width: $footer-separator;
+    height: 1px;
+    position: absolute;
+    left: (100 - $footer-separator) / 2;
+    top: 0;
+    border-bottom: 1px solid darken($bg, 5%);
+  }
+}

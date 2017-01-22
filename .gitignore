@@ -7,3 +7,6 @@ npm-debug.log
 
 # Editor
 .tags
+
+# Mac
+.DS_Store

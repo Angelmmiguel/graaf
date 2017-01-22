@@ -1,0 +1,36 @@
+doctype html
+html
+  include partials/_head.pug
+body
+  main
+    .container
+      header
+        div.logo
+          img(src="./images/graaf.svg")
+        p.slogan.
+          A collection of <strong>pure CSS grids</strong> for designing your new projects
+        p.sub-slogan.
+          Just link the CSS that fits your grid
+
+    section.try
+      .container
+        button(onClick="guideGrid(this); return false;" data-step="0") Try it
+        p.description.
+          This button will add the following code to the <code>head</code> HTML tag.
+        p.code.
+          <code>&lt;link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/graaf/graaf.css"&gt;</code>
+
+    .container
+      table.grids(cellspacing="0")
+        include partials/_table_head.pug
+        tbody
+          each grid, i in currentGrids
+            tr
+              td= grid.name
+              td.row-center= grid.width + 'px'
+              td.row-center= grid.columns + ' Columns'
+              td.row-center= grid.gutter + 'px'
+              td
+                a(href=grid.url + '?v=' + version)= grid.filename
+
+  include partials/_footer.pug
