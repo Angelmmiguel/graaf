@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   pug = require('gulp-pug'),
   imagemin = require('gulp-imagemin'),
   uglify = require('gulp-uglify'),
+  ghPages = require('gulp-gh-pages'),
   config = require('./package.json');
 
 // Folders
@@ -113,6 +114,12 @@ gulp.task('site-images', function() {
   return gulp.src('./site/images/*.svg')
     .pipe(imagemin())
     .pipe(gulp.dest('./site/dist/images'));
+});
+
+// Deploy!
+gulp.task('deploy', ['site-dist'], function() {
+  return gulp.src(siteDist + '/**/*')
+    .pipe(ghPages());
 });
 
 // Compile the site
