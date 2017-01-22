@@ -31,6 +31,7 @@ a {
 .container {
   max-width: $width;
   margin: 0 auto;
+  padding: 0 $gutter;
 }
 
 h1,
@@ -58,6 +59,16 @@ pre {
 
   code {
     font-size: $font-size * .75;
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 480px) {
+  .hide-mobile {
+    display: none;
   }
 }
 
@@ -132,6 +143,11 @@ main {
         position: relative;
         top: 2px;
         margin-right: .5em;
+
+        @media screen and (max-width: 480px) {
+          margin-right: 0;
+          top: 0;
+        }
       }
     }
 
