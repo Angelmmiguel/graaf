@@ -17,8 +17,9 @@ body
         button(onClick="guideGrid(this); return false;" data-step="0") Try it
         p.description.
           This button will add the following code to the <code>head</code> HTML tag.
-        p.code.
-          <code>&lt;link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/graaf/graaf.css"&gt;</code>
+        pre
+          code.
+            &lt;link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/graaf/graaf.css"&gt;
 
     .container
       table.grids(cellspacing="0")
@@ -32,5 +33,7 @@ body
               td.row-center= grid.gutter + 'px'
               td
                 a(href=grid.url + '?v=' + version)= grid.filename
+
+    include partials/_usage.pug
 
   include partials/_footer.pug

@@ -118,7 +118,7 @@ gulp.task('site-js', function() {
 
 // Optimize svg
 gulp.task('site-images', function() {
-  return gulp.src('./site/images/*.svg')
+  return gulp.src('./site/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('./site/dist/images'));
 });
@@ -136,5 +136,5 @@ gulp.task('site-watch', ['site-scss', 'site-views', 'site-static', 'site-images'
   gulp.watch('./site/graaf.js' , ['site-js']);
   gulp.watch('./site/index.pug' , ['site-views']);
   gulp.watch('./site/partials/*.pug' , ['site-views']);
-  gulp.watch('./site/images/*.svg' , ['site-images']);
+  gulp.watch('./site/images/*' , ['site-images']);
 });

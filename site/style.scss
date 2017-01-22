@@ -44,7 +44,21 @@ h1 {
 
 h2 {
   font-size: $font-size * $scale;
+}
+
+h3 {
+  font-family: $font-body;
+  font-size: $font-size * 1.25;
+  margin-bottom: $hu;
+}
+
+pre {
   text-align: center;
+  margin: $hu / 2 0 0;
+
+  code {
+    font-size: $font-size * .75;
+  }
 }
 
 // Main content
@@ -97,17 +111,9 @@ main {
       cursor: pointer;
     }
 
-    .description,
-    .code {
-      font-size: $font-size * .75;
-    }
-
     .description {
+      font-size: $font-size * .75;
       margin-bottom: 0;
-    }
-
-    .code {
-      margin: $hu / 2 0 0;
     }
   }
 
@@ -141,7 +147,6 @@ main {
 
         td:first-child {
           font-family: $font-header;
-          font-size: $font-size * 1.25;
         }
 
         td:last-child {
@@ -156,7 +161,24 @@ main {
       }
     }
   }
+
+  .usage {
+    margin: 3 * $hu 0;
+
+    .usage-block {
+      margin: 2 * $hu 0;
+
+      .image {
+        text-align: center;
+
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
 }
+
 
 footer {
   position: relative;
