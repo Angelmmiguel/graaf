@@ -35,11 +35,10 @@ function guideGrid(el) {
 function guideStep1() {
   document.querySelector('.try button').innerHTML = 'Hide grid';
   document.querySelector('.try .description').innerHTML = 'Now, you can hide the grid adding <code>.no-grid</code> class to <code>body</code>';
-  document.querySelector('.try .code').style.display = 'none';
+  document.querySelector('.try .example').style.display = 'none';
 }
 
 function guideStep2() {
   document.querySelector('.try button').innerHTML = 'Show grid';
   document.querySelector('.try .description').innerHTML = 'If you want to recover the grid, just remove <code>.no-grid</code> class from <code>body</code>';
-  document.querySelector('.try .code').style.display = 'none';
 }
