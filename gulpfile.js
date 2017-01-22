@@ -47,6 +47,13 @@ var currentGrids = [
     columns: 5,
     gutter: 16,
     url: 'https://s3-eu-west-1.amazonaws.com/graaf/nytimes.css'
+  },
+  {
+    name: 'Twitter',
+    width: 1190,
+    columns: 4,
+    gutter: 10,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/twitter.css'
   }
 ];
 
