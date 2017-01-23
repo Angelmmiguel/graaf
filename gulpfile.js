@@ -42,6 +42,13 @@ var currentGrids = [
     url: 'https://s3-eu-west-1.amazonaws.com/graaf/graaf.css'
   },
   {
+    name: 'Medium',
+    width: 1000,
+    columns: 3,
+    gutter: 18,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/medium.css'
+  },
+  {
     name: 'NY Times',
     width: 970,
     columns: 5,
