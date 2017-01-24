@@ -2,7 +2,7 @@
   "name": "graaf",
   "version": "1.0.0",
   "description": "The easiest way to add a grid to your project and check the spacing and vertical rhythm",
-  "main": "index.js",
+  "main": "graaf.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,8 +14,23 @@
     "rhythm",
     "typography"
   ],
-  "author": "Angelmmiguel <angel@laux.es>",
+  "authors": [
+    "Angelmmiguel <angel@laux.es>"
+  ],
   "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "site",
+    ".publish"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angelmmiguel/graaf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Angelmmiguel/graaf/issues"
+  },
+  "homepage": "http://graaf.space/",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
