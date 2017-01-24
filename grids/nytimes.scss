@@ -4,4 +4,4 @@ $width: 970px;
 $columns: 5;
 $gutter: 16px;
 
-@include generateFixedGrid($width, $columns, $gutter);
+@include generateFixedGrid($width, $columns, $gutter, true);

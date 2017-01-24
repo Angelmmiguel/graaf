@@ -1,16 +1,19 @@
 /**
  * Generate a fixed grid.
  */
-@mixin generateFixedGrid($width, $columns, $gutter) {
+@mixin generateFixedGrid($width, $columns, $gutter, $baseline) {
   // Base image
   $base_image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUCB1j6OvrMwEABTcB30rDe3EAAAAASUVORK5CYII=');
 
   // The width of every column
   $column_width: ($width - ($gutter * ($columns - 1))) / $columns;
   // Generate required values. We are going to use the same image several times
+  // A fixed height is required to generate the Baseline
+  $height: 1440px;
   $images: $base_image;
   $positions: 0 0;
   $sizes: $column_width 1px;
+  $repeats: repeat-y;
 
   @for $col from 1 through ($columns - 1)  {
     // Position of the current column
@@ -18,6 +21,23 @@
     // Repeat image and positions
     $images: $images, $base_image;
     $positions: $positions, $position 0;
+    $sizes: $sizes, $column_width 1px;
+    $repeats: $repeats, repeat-y;
+  }
+
+  @if $baseline {
+    // Calculate the number of rows we need
+    $row_height: $gutter / 2;
+    $row_count: ($height / $row_height) / 2;
+
+    @for $row from 0 to $row_count {
+      $position: 2 * $row * $row_height;
+
+      $images: $images, $base_image;
+      $positions: $positions, 0 $position;
+      $repeats: $repeats, repeat-x;
+      $sizes: $sizes, 1px $row_height;
+    }
   }
 
   // BEGIN CSS CODE
@@ -30,7 +50,7 @@
       content: '';
       position: fixed;
       // Will be enough?
-      z-index: 99999999999;
+      z-index: 999999999;
       // Center it
       width: $width;
       left: 50%;
@@ -41,8 +61,8 @@
       height: 100vh;
       background-image: $images;
       background-position: $positions;
-      background-size: $column_width 1px;
-      background-repeat: repeat-y;
+      background-size: $sizes;
+      background-repeat: $repeats;
     }
   }
   // END CSS CODE
