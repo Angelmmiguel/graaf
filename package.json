@@ -1,7 +1,7 @@
 {
   "name": "graaf",
   "version": "0.1.0",
-  "description": "The easiest way to add a grid to your project and check the spacing and vertical rhythm",
+  "description": "A collection of pure CSS grid overlays for designing your new projects.",
   "main": "graaf.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
