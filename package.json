@@ -1,6 +1,6 @@
 {
   "name": "graaf",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "The easiest way to add a grid to your project and check the spacing and vertical rhythm",
   "main": "graaf.scss",
   "scripts": {
