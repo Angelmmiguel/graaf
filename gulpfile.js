@@ -32,7 +32,7 @@ var currentGrids = [
     width: 1100,
     columns: 7,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/dribbble.css'
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/cnn.css'
   },
   {
     name: 'Dribbble',
