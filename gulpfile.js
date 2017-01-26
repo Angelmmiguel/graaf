@@ -14,11 +14,25 @@ var dist = './dist',
 // Current grids
 var currentGrids = [
   {
+    name: 'BBC News',
+    width: 976,
+    columns: 12,
+    gutter: 16,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/bbc.css'
+  },
+  {
     name: 'Bootstrap',
     width: 1170,
     columns: 12,
     gutter: 16,
     url: 'https://s3-eu-west-1.amazonaws.com/graaf/bootstrap.css'
+  },
+  {
+    name: 'CNN Inter.',
+    width: 1100,
+    columns: 7,
+    gutter: 20,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/dribbble.css'
   },
   {
     name: 'Dribbble',
