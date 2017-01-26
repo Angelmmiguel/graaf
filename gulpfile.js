@@ -79,7 +79,8 @@ var currentGrids = [
 ];
 
 currentGrids = currentGrids.map(function(grid) {
-  grid.filename = grid.name.toLowerCase().replace(' ', '') + '.css';
+  var splitted = grid.url.split('/');
+  grid.filename = splitted[splitted.length - 1];
   return grid;
 })
 
