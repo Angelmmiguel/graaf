@@ -1,6 +1,6 @@
 {
   "name": "graaf",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A collection of pure CSS grid overlays for designing your new projects.",
   "main": "graaf.scss",
   "scripts": {
