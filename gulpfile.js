@@ -56,6 +56,13 @@ var currentGrids = [
     url: 'https://s3-eu-west-1.amazonaws.com/graaf/graaf.css'
   },
   {
+    name: 'HBO',
+    width: 1184,
+    columns: 12,
+    gutter: 24,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/hbo.css'
+  },
+  {
     name: 'Medium',
     width: 1000,
     columns: 3,
@@ -68,6 +75,20 @@ var currentGrids = [
     columns: 5,
     gutter: 16,
     url: 'https://s3-eu-west-1.amazonaws.com/graaf/nytimes.css'
+  },
+  {
+    name: 'Product Hunt',
+    width: 1070,
+    columns: 8,
+    gutter: 20,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/producthunt.css'
+  },
+  {
+    name: 'The guardian',
+    width: 1100,
+    columns: 14,
+    gutter: 20,
+    url: 'https://s3-eu-west-1.amazonaws.com/graaf/theguardian.css'
   },
   {
     name: 'Twitter',
