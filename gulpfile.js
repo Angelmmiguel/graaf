@@ -18,98 +18,98 @@ var currentGrids = [
     width: 976,
     columns: 12,
     gutter: 16,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/bbc.css'
+    url: 'https://grids.graaf.space/bbc.css'
   },
   {
     name: 'Bootstrap',
     width: 1170,
     columns: 12,
     gutter: 16,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/bootstrap.css'
+    url: 'https://grids.graaf.space/bootstrap.css'
   },
   {
     name: 'CNN Inter.',
     width: 1100,
     columns: 7,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/cnn.css'
+    url: 'https://grids.graaf.space/cnn.css'
   },
   {
     name: 'Dribbble',
     width: 970,
     columns: 4,
     gutter: 30,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/dribbble.css'
+    url: 'https://grids.graaf.space/dribbble.css'
   },
   {
     name: 'Github',
     width: 980,
     columns: 12,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/github.css'
+    url: 'https://grids.graaf.space/github.css'
   },
   {
     name: 'Graaf',
     width: 793,
     columns: 10,
     gutter: 16,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/graaf.css'
+    url: 'https://grids.graaf.space/graaf.css'
   },
   {
     name: 'Harvard',
     width: 1176,
     columns: 12,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/harvard.css'
+    url: 'https://grids.graaf.space/harvard.css'
   },
   {
     name: 'HBO',
     width: 1184,
     columns: 12,
     gutter: 24,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/hbo.css'
+    url: 'https://grids.graaf.space/hbo.css'
   },
   {
     name: 'Medium',
     width: 1000,
     columns: 3,
     gutter: 18,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/medium.css'
+    url: 'https://grids.graaf.space/medium.css'
   },
   {
     name: 'NY Times',
     width: 970,
     columns: 5,
     gutter: 16,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/nytimes.css'
+    url: 'https://grids.graaf.space/nytimes.css'
   },
   {
     name: 'Product Hunt',
     width: 1070,
     columns: 8,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/producthunt.css'
+    url: 'https://grids.graaf.space/producthunt.css'
   },
   {
     name: 'Soundcloud',
     width: 1180,
     columns: 12,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/soundcloud.css'
+    url: 'https://grids.graaf.space/soundcloud.css'
   },
   {
     name: 'The guardian',
     width: 1100,
     columns: 14,
     gutter: 20,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/theguardian.css'
+    url: 'https://grids.graaf.space/theguardian.css'
   },
   {
     name: 'Twitter',
     width: 1190,
     columns: 4,
     gutter: 10,
-    url: 'https://s3-eu-west-1.amazonaws.com/graaf/twitter.css'
+    url: 'https://grids.graaf.space/twitter.css'
   }
 ];
 

@@ -10,7 +10,22 @@
         grid overlay, just copy the following code in your <code>head</code> tag:
       pre
         code.
-          &lt;link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/graaf/graaf.css"&gt;
+          &lt;link rel="stylesheet" href="https://grids.graaf.space/graaf.css"&gt;
+
+    .usage-block
+      h3#custom-grids Custom grids
+      p.
+        If you need a more specific grid, you can link a custom stylesheet using
+        the Graaf API. You only need to modify the placeholders:
+      pre
+        code.
+          &lt;link rel="stylesheet" href="https://grids.graaf.space/WIDTH/COLUMNS/GUTTER.css"&gt;
+      p.description.
+        For example, the next link will include a <em>793px</em> width, <em>10</em> columns
+        and <em>16px</em> of gutter grid overlay in your site:
+      pre
+        code.
+          &lt;link rel="stylesheet" href="https://grids.graaf.space/793/10/16.css"&gt;
 
     .usage-block
       h3 Codepen

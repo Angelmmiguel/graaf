@@ -5,7 +5,7 @@ function guideGrid(el) {
     case 0:
       // Add link
       var link = document.createElement('link');
-      link.href = '//s3-eu-west-1.amazonaws.com/graaf/graaf.css';
+      link.href = 'https://grids.graaf.space/graaf.css';
       link.rel = 'stylesheet';
       link.media = 'all';
       link.type = 'text/css';

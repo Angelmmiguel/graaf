@@ -9,9 +9,9 @@ body
         div.logo
           img(src="./images/graaf.svg")
         p.slogan.
-          A collection of <strong>pure CSS grid overlays</strong> for designing
+          <strong>Pure CSS grid overlays</strong> for designing
         p.sub-slogan.
-          Just link the CSS that fits your grid
+          Just link the CSS that fits your grid or create your custom overlay
 
     section.try
       .container
@@ -20,20 +20,38 @@ body
           This button will add the following code to the <code>head</code> HTML tag.
         pre.example
           code.
-            &lt;link rel="stylesheet" href="//s3-eu-west-1.amazonaws.com/graaf/graaf.css"&gt;
+            &lt;link rel="stylesheet" href="https://grids.graaf.space/793/10/16.css"&gt;
 
-    .container
-      table.grids(cellspacing="0")
-        include partials/_table_head.pug
-        tbody
-          each grid, i in currentGrids
-            tr
-              td= grid.name
-              td.row-center= grid.width + 'px'
-              td.row-center= grid.columns
-              td.row-center= grid.gutter + 'px'
-              td
-                a(href=grid.url + '?v=' + version)= grid.filename
+    section.custom
+      .container
+        h2 Grids
+        p.description.
+          Now, You can create your <a href="#custom-grids">custom grid overlays</a> using the new
+          Graaf API. Just set your grid parameters in the path:
+
+        p
+          pre
+            code.
+              &lt;link rel="stylesheet" href="https://grids.graaf.space/WIDTH/COLUMNS/GUTTER.css"&gt;
+              &lt;link rel="stylesheet" href="https://grids.graaf.space/793/10/16.css"&gt;
+
+    section.predefined
+      .container
+        h3 The collection
+        p.
+          You can use a predefined grid overlay from the collection:
+
+        table.grids(cellspacing="0")
+          include partials/_table_head.pug
+          tbody
+            each grid, i in currentGrids
+              tr
+                td= grid.name
+                td.row-center= grid.width + 'px'
+                td.row-center= grid.columns
+                td.row-center= grid.gutter + 'px'
+                td
+                  a(href=grid.url + '?v=' + version)= grid.filename
 
     include partials/_usage.pug
 
