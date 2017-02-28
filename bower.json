@@ -1,0 +1,28 @@
+{
+  "name": "graaf",
+  "description": "A collection of pure CSS grid overlays for designing your new projects.",
+  "main": "graaf.scss",
+  "authors": [
+    "Angel M <angel@laux.es>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "grid",
+    "design",
+    "vertical",
+    "rhythm",
+    "typography"
+  ],
+  "homepage": "https://graaf.space",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "site",
+    ".publish",
+    ".tags*"
+  ]
+}
